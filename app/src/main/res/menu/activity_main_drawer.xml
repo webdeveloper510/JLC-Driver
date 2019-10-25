@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_instant_request"
+            android:icon="@mipmap/inst_request"
+            android:title="Instant Request" />
+      <!--  <item
+            android:id="@+id/nav_instant_accepted"
+            android:icon="@mipmap/inst_accept"
+            android:title="Instant Accepted" />
+        <item
+            android:id="@+id/nav_schedule_request"
+            android:icon="@mipmap/sch_request"
+            android:title="Schedule Request" />
+
+        <item
+            android:id="@+id/nav_schedule_accepted"
+            android:icon="@mipmap/sch_request"
+            android:title="Schedule Accepted" />
+
+-->
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@mipmap/history"
+            android:title="History" />
+
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@mipmap/edit_profile"
+            android:title="Edit Profile" />
+
+        <!--<item
+            android:id="@+id/nav_schedule_ride"
+            android:icon="@mipmap/sch_ride"
+            android:title="Schedule Ride" />
+-->
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@mipmap/logout"
+            android:title="Logout" />
+
+
+
+    </group>
+
+
+
+
+</menu>

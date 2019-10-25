@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f8f8f8"
+    android:id="@+id/background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:id="@+id/ivphoto"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/car"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/tvUploadPhoto"
+                android:text="Upload Car Photo" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_tv_new"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:hint="Car Number"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:paddingLeft="5dp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_tv_new"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:hint="Enter Model No"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:paddingLeft="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="2"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/eddob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_tv_new"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:hint="Enter Year of Making"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:textSize="15dp"
+                android:paddingLeft="5dp" />
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_tv_new"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:hint="Car Color"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:paddingLeft="5dp" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_tv_new"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:hint="Enter Brand Name"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:paddingLeft="5dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edConfimPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_tv_new"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:hint="No of Seats"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:paddingLeft="5dp" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button_alert"
+                android:text="Register"
+                android:id="@+id/btnRegister"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:text="Reset Password"-->
+                <!--android:id="@+id/tvresetPass"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:gravity="center"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_marginBottom="30dp"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:textSize="18dp"/>-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

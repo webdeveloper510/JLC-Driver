@@ -1,0 +1,178 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/activity_path_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <include
+            android:id="@+id/toolbar1"
+            layout="@layout/trip_navigate_layout" />
+
+        <FrameLayout
+            android:id="@+id/frameLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar1">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                tools:context=".MapsActivity" />
+
+            <ImageView
+                android:id="@+id/img_Loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar1"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:padding="2dp"
+                android:src="@mipmap/map_location" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:id="@+id/llCustomerInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="3dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/customerProfile"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.15"
+                    android:src="@mipmap/user" />
+
+                <TextView
+                    android:id="@+id/txCustomerName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0.35"
+                    android:text="Rubi Sidhu"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txPaymentType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.15"
+                    android:text="Cash"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/txCancelRide"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:background="@drawable/textview_design"
+                    android:layout_weight="0.35"
+                    android:text="Cancel Ride"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llCustomerInfo"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <com.shitij.goyal.slidebutton.SwipeButton
+                    android:id="@+id/swipe_startTrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_design"
+                    android:gravity="center"
+                    android:text="@string/trip_start"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone"
+                    app:after_confirmation_background="#0083db"
+                    app:button_confirm_text="@string/complete_trip"
+                    app:button_swipe_text="@string/trip_start"
+                    app:gradient_color_1="#500083db"
+                    app:gradient_color_2="#500083db"
+                    app:gradient_color_2_width="330dp"
+                    app:gradient_color_3="#0083db"
+                    app:swipe_mode="clamp"
+                    app:threshold="0.7" />
+
+                <com.shitij.goyal.slidebutton.SwipeButton
+                    android:id="@+id/swipe_completeTrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_design"
+                    android:gravity="center"
+                    android:text="@string/complete_trip"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone"
+                    app:after_confirmation_background="#0083db"
+                    app:button_confirm_text="Slide to cash collect"
+                    app:button_swipe_text="@string/complete_trip"
+                    app:gradient_color_1="#500083db"
+                    app:gradient_color_2="#500083db"
+                    app:gradient_color_2_width="330dp"
+                    app:gradient_color_3="#0083db"
+                    app:swipe_mode="clamp"
+                    app:threshold="0.7" />
+
+                <TextView
+                    android:id="@+id/tv_beginTrip"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/button_design"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Click When You Arrived"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

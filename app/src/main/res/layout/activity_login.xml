@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:id="@+id/background"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+
+    <LinearLayout
+        android:id="@+id/layout_username"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_Email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey" />
+
+
+        <EditText
+            android:id="@+id/et_Password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textWebPassword"
+            android:textColor="@color/grey"
+            android:textColorHint="@color/grey" />
+
+
+        <CheckBox
+            android:id="@+id/saveLoginCheckBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center"
+            android:text="Remember Me"
+            android:buttonTint="@color/white"
+            android:textColor="#FFF" />
+
+
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="25dp"
+            android:text="Forgot Password"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="LOGIN"
+            android:background="@drawable/custom_button"
+            android:onClick="phoneLogin"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:src="@drawable/or"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+        <Button
+            android:id="@+id/btn_Register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/yellow"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Register"
+            android:textAllCaps="true"
+            android:textColor="@color/black" />
+
+        <!--<ImageView-->
+        <!--android:src="@drawable/or"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_height="35dp" />-->
+
+
+
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="horizontal">-->
+
+
+
+    <!--<Button-->
+    <!--android:id="@+id/txt_AsGuest"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_gravity="end"-->
+    <!--android:background="@color/white"-->
+    <!--android:gravity="center"-->
+    <!--android:text="As guest"-->
+    <!--android:textAllCaps="true"-->
+    <!--android:textColor="@color/black" />-->
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>
+

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "892486461543",
+    "firebase_url": "https://jlc-driverapp.firebaseio.com",
+    "project_id": "jlc-driverapp",
+    "storage_bucket": "jlc-driverapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892486461543:android:24f0ef18f212ad3f",
+        "android_client_info": {
+          "package_name": "jlc.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892486461543-7gfboc8g6jqfccrq1ohepvlvr13fnvqp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jlc.driver",
+            "certificate_hash": "2c23bfb7949e5795ee2eb11316b00a09dea3b0a0"
+          }
+        },
+        {
+          "client_id": "892486461543-6dmseq92m0ffuimbkoid0mlerqtu6p83.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ4eu9a7tBkkWX9Fb3OgHOBrQqyBXoPsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892486461543-6dmseq92m0ffuimbkoid0mlerqtu6p83.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
